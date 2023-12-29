@@ -250,8 +250,9 @@ if uploaded_file is not None:
         st.warning("PDF files are not currently supported.")
     else:
         # Handle other file types (CSV, JPG, JPEG, PNG)
-        bytes_data = uploaded_file.getvalue()
-        st.write(bytes_data)
+        # bytes_data = uploaded_file.getvalue()
+        # st.write(bytes_data)
+        pass
 
         if uploaded_file.type.startswith('image'):
             # If it's an image, display it
